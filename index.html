@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="LLM-Assist: Enhancing Closed-Loop Planning with Language-Based Reasoning.">
-  <meta name="keywords" content="Closed-Loop Planning, Autonomous Driving, Large Language Models, Prompting, Commonsense Reasoning">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LLM-Assist</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="LLM-Assist: Enhancing Closed-Loop Planning with Language-Based Reasoning.">
+    <meta name="keywords"
+        content="Closed-Loop Planning, Autonomous Driving, Large Language Models, Prompting, Commonsense Reasoning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LLM-Assist</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -22,35 +23,34 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <!-- <div class="navbar-menu">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
@@ -80,27 +80,28 @@
     </div>
 
   </div> -->
-</nav>
+    </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">LLM-Assist: Enhancing Closed-Loop Planning with Language-Based Reasoning</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://spsharan.com">S P Sharan</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.francescopittaluga.com">Francesco Pittaluga</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://sites.google.com/site/vijaykbg">Vijay Kumar B G</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://cseweb.ucsd.edu/~mkchandraker">Manmohan Chandraker</a><sup>2, 3</sup>
-            </span>
-            <!-- <span class="author-block">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">LLM-Assist: Enhancing Closed-Loop Planning with
+                            Language-Based Reasoning</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://spsharan.com">S P Sharan</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://www.francescopittaluga.com">Francesco Pittaluga</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://sites.google.com/site/vijaykbg">Vijay Kumar B G</a><sup>2</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://cseweb.ucsd.edu/~mkchandraker">Manmohan Chandraker</a><sup>2, 3</sup>
+                            </span>
+                            <!-- <span class="author-block">
               <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
             </span>
             <span class="author-block">
@@ -109,57 +110,57 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span> -->
-          </div>
+                        </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Texas at Austin,</span>
-            <span class="author-block"><sup>2</sup>NEC Labs America,</span>
-            <span class="author-block"><sup>3</sup>University of California San Diego</span>
-          </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>University of Texas at Austin,</span>
+                            <span class="author-block"><sup>2</sup>NEC Labs America,</span>
+                            <span class="author-block"><sup>3</sup>University of California San Diego</span>
+                        </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v="
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2401.00125.pdf"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2401.00125"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com/watch?v="
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button         is-normal is-rounded is-dark">
                   <span class="icon">
@@ -167,31 +168,38 @@
                   </span>
                   <span>Data</span>
                   </a> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">LLM-Assist</span> is a novel hybrid planning approach that synergizes a rule-based planner (PDM-Closed) and an LLM-based planner to tackle challenging high uncertainty autonomous driving scenarios
-      </h2>
-    </div>
-  </div>
-</section>
+      </video> -->
+                <!-- insert static/images/arch.png -->
+                <img src="./static/images/arch.png" alt="LLM-Assist Architecture" width="100%">
+                <br>
+                <br>
+                <!-- <br>       -->
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">LLM-Assist</span> is a novel hybrid planning approach that synergizes a
+                    rule-based planner (PDM-Closed) and an LLM-based planner to tackle challenging high uncertainty
+                    autonomous driving scenarios
+                </h2>
+            </div>
+            <!-- </div>
+</section> -->
 
 
-<section class="hero is-light is-small">
+            <!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -245,34 +253,42 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </div>-->
+    </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Although planning is a crucial component of the autonomous driving stack, researchers have yet to develop robust
-            planning algorithms that are capable of safely handling the diverse range of possible driving scenarios. Learning-based
-            planners suffer from overfitting and poor long-tail performance. On the other hand, rule-based
-            planners generalize well, but might fail to handle scenarios that require complex driving maneuvers. 
-          </p>
-          <p>
-            To address these limitations, we investigate the possibility of leveraging the common-sense
-            reasoning capabilities of Large Language Models (LLMs) such as GPT4 and Llama2 to generate plans for self-driving vehicles. In particular, we develop a novel hybrid planner
-            that leverages a conventional rule-based planner in conjunction with an LLM-based planner. 
-          </p>
-          <p>
-            Guided by commonsense reasoning abilities of LLMs, our approach navigates complex scenarios which existing planners struggle with, produces
-            well-reasoned outputs while also remaining grounded through working alongside the rule-based approach. Through extensive
-            evaluation on the nuPlan benchmark, we achieve state-of-the-art performance, outperforming all existing pure learning- and rule-based methods across most metrics.
-          </p>
-          <!-- <p>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Although planning is a crucial component of the autonomous driving stack, researchers have
+                            yet to develop robust
+                            planning algorithms that are capable of safely handling the diverse range of possible
+                            driving scenarios. Learning-based
+                            planners suffer from overfitting and poor long-tail performance. On the other hand,
+                            rule-based
+                            planners generalize well, but might fail to handle scenarios that require complex driving
+                            maneuvers.
+                        </p>
+                        <p>
+                            To address these limitations, we investigate the possibility of leveraging the common-sense
+                            reasoning capabilities of Large Language Models (LLMs) such as GPT4 and Llama2 to generate
+                            plans for self-driving vehicles. In particular, we develop a novel hybrid planner
+                            that leverages a conventional rule-based planner in conjunction with an LLM-based planner.
+                        </p>
+                        <p>
+                            Guided by commonsense reasoning abilities of LLMs, our approach navigates complex scenarios
+                            which existing planners struggle with, produces
+                            well-reasoned outputs while also remaining grounded through working alongside the rule-based
+                            approach. Through extensive
+                            evaluation on the nuPlan benchmark, we achieve state-of-the-art performance, outperforming
+                            all existing pure learning- and rule-based methods across most metrics.
+                        </p>
+                        <!-- <p>
             We present the first method capable of photorealistically reconstructing a non-rigidly
             deforming scene using photos/videos captured casually from mobile phones.
           </p>
@@ -299,134 +315,134 @@
             reconstructs non-rigidly deforming scenes and reproduces unseen views with high
             fidelity.
           </p> -->
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+                    </div>
+                </div>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/utzYjn9LghU?rel=0&amp;showinfo=0" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/ Paper video. -->
         </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
+    </section>
 
 
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Metrics</h2>
+                    <p>
+                        LLM-Assist evaluated on nuPlan Closed-Loop Challenges on Val14 split. GPT-3-Assist<sub>PAR</sub>
+                        achieves SoTA performance on almost all metrics on both closed-loop challenges, reducing the
+                        number of dangerous driving scenarios by 11%.
+                    </p>
+                    <iframe src="./metrics/play.html" width="100%" height="400"></iframe>
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+
+                <!-- Visual Effects. -->
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">Visual Effects</h2>
+                        <p>
+                            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                            would be impossible without nerfies since it would require going through a wall.
+                        </p>
+                        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!--/ Visual Effects. -->
+
+                <!-- Matting. -->
+                <div class="column">
+                    <h2 class="title is-3">Matting</h2>
+                    <div class="columns is-centered">
+                        <div class="column content">
+                            <p>
+                                As a byproduct of our method, we can also solve the matting problem by ignoring
+                                samples that fall outside of a bounding box during rendering.
+                            </p>
+                            <video id="matting-video" controls playsinline height="100%">
+                                <source src="./static/videos/matting.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/ Matting. -->
+
+            <!-- Animation. -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Animation</h2>
+
+                    <!-- Interpolating. -->
+                    <h3 class="title is-4">Interpolating states</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            We can also animate the scene by interpolating the deformation latent codes of two input
+                            frames. Use the slider here to linearly interpolate between the left frame and the right
+                            frame.
+                        </p>
+                    </div>
+                    <div class="columns is-vcentered interpolation-panel">
+                        <div class="column is-3 has-text-centered">
+                            <img src="./static/images/interpolate_start.jpg" class="interpolation-image"
+                                alt="Interpolate start reference image." />
+                            <p>Start Frame</p>
+                        </div>
+                        <div class="column interpolation-video-column">
+                            <div id="interpolation-image-wrapper">
+                                Loading...
+                            </div>
+                            <input class="slider is-fullwidth is-large is-info" id="interpolation-slider" step="1"
+                                min="0" max="100" value="0" type="range">
+                        </div>
+                        <div class="column is-3 has-text-centered">
+                            <img src="./static/images/interpolate_end.jpg" class="interpolation-image"
+                                alt="Interpolation end reference image." />
+                            <p class="is-bold">End Frame</p>
+                        </div>
+                    </div>
+                    <br />
+                    <!--/ Interpolating. -->
+
+                    <!-- Re-rendering. -->
+                    <h3 class="title is-4">Re-rendering the input video</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+                            viewpoint such as a stabilized camera by playing back the training deformations.
+                        </p>
+                    </div>
+                    <div class="content has-text-centered">
+                        <video id="replay-video" controls muted preload playsinline width="75%">
+                            <source src="./static/videos/replay.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <!--/ Re-rendering. -->
+
+                </div>
+            </div>
+            <!--/ Animation. -->
+
+
+            <!-- Concurrent Work. -->
+            <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -450,41 +466,41 @@
         </div>
       </div>
     </div> -->
-    <!--/ Concurrent Work. -->
+            <!--/ Concurrent Work. -->
 
-  </div>
-</section>
+        </div>
+    </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{sharan2020llmassist,
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{sharan2023llm,
     title={LLM-Assist: Enhancing Closed-Loop Planning with Language-Based Reasoning},
     author={Sharan, S P and Pittaluga, Francesco and Kumar B G, Vijay and Chandraker, Manmohan},
-    journal={arXiv preprint arXiv:},
+    journal={arXiv preprint arXiv:2401.00125},
     year={2023}
 }
 </code></pre>
-  </div>
-</section>
+        </div>
+    </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <!-- <a class="icon-link"
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <!-- <a class="icon-link"
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a> -->
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <!-- <p>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <!-- <p>
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
@@ -496,16 +512,18 @@
             Please remember to remove the analytics code included in the header of the website which
             you do not want on your website.
           </p> -->
-          <center>
-            <p>
-              Template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-            </p>
-          </center>
+                        <center>
+                            <p>
+                                Template borrowed from <a
+                                    href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
