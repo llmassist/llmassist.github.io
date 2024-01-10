@@ -340,13 +340,41 @@
             <div class="columns is-centered">
                 <div class="column is-full-width">
                     <h2 class="title is-3">Metrics</h2>
-                    <p>
-                        LLM-Assist evaluated on nuPlan Closed-Loop Challenges on Val14 split. GPT-3-Assist<sub>PAR</sub>
-                        achieves SoTA performance on almost all metrics on both closed-loop challenges, reducing the
-                        number of dangerous driving scenarios by 11%.
-                    </p>
-                    <iframe src="./metrics/play.html" width="100%" height="400"></iframe>
-                </div>
+
+                    <h3 class="title is-4">nuPlan Val-14 Split</h3>
+                      <div class="content has-text-justified">
+                        <p>
+                            LLM-Assist evaluated on nuPlan Closed-Loop Challenges on Val14 split. GPT-3-Assist<sub>PAR</sub>
+                            achieves SoTA performance on almost all metrics on both closed-loop challenges, reducing the
+                            number of dangerous driving scenarios by 11%.
+                        </p>
+                        <div class="columns is-centered">
+                          <div class="column is-half">
+                            <iframe src="./metrics/table_2_nr.html" width="100%" height="600"></iframe>
+                          </div>
+                          <div class="column is-half">
+                            <iframe src="./metrics/table_2_r.html" width="100%" height="600"></iframe>
+                            </div>
+                      </div>
+
+                    <h3 class="title is-4">GPT-3 vs LLM-Assist</h3>
+                    <div class="content has-text-justified">
+                      <p>
+                        Comparison between GPT-3 planner and LLM-Assit on nuPlan Closed-Loop Challenges on a subset of
+                        Val14 split consisting of 140 samples. Without fine-tuning, GPT-3 on its own is incapable of directly generating
+                        successful plans. This shows the importance of LLM-Assist's hybrid architecture.
+                      </p>
+                      <div class="columns is-centered">
+                        <div class="column is-half">
+                          <iframe src="./metrics/table_3_nr.html" width="100%" height="600"></iframe>
+                        </div>
+                        <div class="column is-half">
+                          <iframe src="./metrics/table_3_r.html" width="100%" height="600"></iframe>
+                          </div>
+                      </div>
+
+
+                    </div>
             </div>
 
 
