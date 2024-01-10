@@ -89,7 +89,8 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title">LLM-Assist: Enhancing Closed-Loop Planning with
-                            Language-Based Reasoning</h1>
+                            Language-Based
+                            Reasoning</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
                                 <a href="https://spsharan.com">S P Sharan</a><sup>1</sup>,</span>
@@ -101,15 +102,6 @@
                             <span class="author-block">
                                 <a href="https://cseweb.ucsd.edu/~mkchandraker">Manmohan Chandraker</a><sup>2, 3</sup>
                             </span>
-                            <!-- <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span> -->
                         </div>
 
                         <div class="is-size-5 publication-authors">
@@ -159,17 +151,7 @@
                                         <span>Code</span>
                                     </a>
                                 </span>
-                                <!-- Dataset Link. -->
-                                <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button         is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -266,55 +248,24 @@
                     <div class="content has-text-justified">
                         <p>
                             Although planning is a crucial component of the autonomous driving stack, researchers have
-                            yet to develop robust
-                            planning algorithms that are capable of safely handling the diverse range of possible
-                            driving scenarios. Learning-based
-                            planners suffer from overfitting and poor long-tail performance. On the other hand,
-                            rule-based
-                            planners generalize well, but might fail to handle scenarios that require complex driving
-                            maneuvers.
+                            yet to develop robust planning algorithms that are capable of safely handling the diverse
+                            range of possible driving scenarios. Learning-based planners suffer from overfitting and
+                            poor long-tail performance. On the other hand, rule-based planners generalize well, but
+                            might fail to handle scenarios that require complex driving maneuvers.
                         </p>
                         <p>
                             To address these limitations, we investigate the possibility of leveraging the common-sense
                             reasoning capabilities of Large Language Models (LLMs) such as GPT4 and Llama2 to generate
-                            plans for self-driving vehicles. In particular, we develop a novel hybrid planner
-                            that leverages a conventional rule-based planner in conjunction with an LLM-based planner.
+                            plans for self-driving vehicles. In particular, we develop a novel hybrid planner that
+                            leverages a conventional rule-based planner in conjunction with an LLM-based planner.
                         </p>
                         <p>
                             Guided by commonsense reasoning abilities of LLMs, our approach navigates complex scenarios
-                            which existing planners struggle with, produces
-                            well-reasoned outputs while also remaining grounded through working alongside the rule-based
-                            approach. Through extensive
-                            evaluation on the nuPlan benchmark, we achieve state-of-the-art performance, outperforming
-                            all existing pure learning- and rule-based methods across most metrics.
+                            which existing planners struggle with, produces well-reasoned outputs while also remaining
+                            grounded through working alongside the rule-based approach. Through extensive evaluation on
+                            the nuPlan benchmark, we achieve state-of-the-art performance, outperforming all existing
+                            pure learning- and rule-based methods across most metrics.
                         </p>
-                        <!-- <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p> -->
                     </div>
                 </div>
             </div>
@@ -340,72 +291,40 @@
             <div class="columns is-centered">
                 <div class="column is-full-width">
                     <h2 class="title is-3">Metrics</h2>
-
                     <h3 class="title is-4">nuPlan Val-14 Split</h3>
-                      <div class="content has-text-justified">
+                    <div class="content has-text-justified">
                         <p>
-                            LLM-Assist evaluated on nuPlan Closed-Loop Challenges on Val14 split. GPT-3-Assist<sub>PAR</sub>
-                            achieves SoTA performance on almost all metrics on both closed-loop challenges, reducing the
-                            number of dangerous driving scenarios by 11%.
+                            LLM-Assist evaluated on nuPlan Closed-Loop Challenges on Val14 split.
+                            GPT-3-Assist<sub>PAR</sub> achieves SoTA performance on almost all metrics on both
+                            closed-loop challenges, reducing the number of dangerous driving scenarios by 11%.
                         </p>
                         <div class="columns is-centered">
-                          <div class="column is-half">
-                            <iframe src="./metrics/table_2_nr.html" width="100%" height="600"></iframe>
-                          </div>
-                          <div class="column is-half">
-                            <iframe src="./metrics/table_2_r.html" width="100%" height="600"></iframe>
+                            <div class="column is-half">
+                                <iframe src="./metrics/table_2_nr.html" width="100%" height="600"></iframe>
                             </div>
-                      </div>
-
-                    <h3 class="title is-4">GPT-3 vs LLM-Assist</h3>
-                    <div class="content has-text-justified">
-                      <p>
-                        Comparison between GPT-3 planner and LLM-Assit on nuPlan Closed-Loop Challenges on a subset of
-                        Val14 split consisting of 140 samples. Without fine-tuning, GPT-3 on its own is incapable of directly generating
-                        successful plans. This shows the importance of LLM-Assist's hybrid architecture.
-                      </p>
-                      <div class="columns is-centered">
-                        <div class="column is-half">
-                          <iframe src="./metrics/table_3_nr.html" width="100%" height="600"></iframe>
+                            <div class="column is-half">
+                                <iframe src="./metrics/table_2_r.html" width="100%" height="600"></iframe>
+                            </div>
                         </div>
-                        <div class="column is-half">
-                          <iframe src="./metrics/table_3_r.html" width="100%" height="600"></iframe>
-                          </div>
-                      </div>
-
-
+                        <h3 class="title is-4">GPT-3 vs LLM-Assist</h3>
+                        <div class="content has-text-justified">
+                            <p>
+                                Comparison between GPT-3 planner and LLM-Assit on nuPlan Closed-Loop Challenges on a
+                                subset of Val14 split consisting of 140 samples. Without fine-tuning, GPT-3 on its own
+                                is incapable of directly generating successful plans. This shows the importance of
+                                LLM-Assist's hybrid architecture.
+                            </p>
+                            <div class="columns is-centered">
+                                <div class="column is-half">
+                                    <iframe src="./metrics/table_3_nr.html" width="100%" height="600"></iframe>
+                                </div>
+                                <div class="column is-half">
+                                    <iframe src="./metrics/table_3_r.html" width="100%" height="600"></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            </div>
-
-
-            <!-- Concurrent Work. -->
-            <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-            <!--/ Concurrent Work. -->
-
-        </div>
+                </div>
     </section>
 
 
@@ -426,29 +345,16 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <!-- <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a> -->
-                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                <a class="icon-link" href="https://arxiv.org/pdf/2401.00125.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/Syzygianinfern0" class="external-link" disabled>
                     <i class="fab fa-github"></i>
                 </a>
             </div>
             <div class="columns is-centered">
                 <div class="column is-8">
                     <div class="content">
-                        <!-- <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p> -->
                         <center>
                             <p>
                                 Template borrowed from <a

@@ -1,15 +1,5 @@
-"""
-PDMClosed	92.51	98.05	93.11	99.55	95.19	91.75	99.83	99.95
-GPT-3-ASSIST-UNC	90.11	96.19	92.55	98.91	93.37	91.05	99.83	99.91
-GPT-3-ASSIST-PAR	93.05	98.31	93.69	99.54	95.61	92.16	99.83	99.95
-PDMClosed	91.79	97.91	93.29	99.37	94.65	89.92	99.83	99.95
-GPT-3-ASSIST-UNC	90.32	96.82	93.1	98.73	92.92	89.01	99.83	99.86
-GPT-3-ASSIST-PAR	92.2	98.18	93.62	99.64	94.72	90.07	99.83	99.95
-"""
-
 import plotly.express as px
 import plotly.graph_objects as go
-from jinja2 import Template
 from plotly.subplots import make_subplots
 
 closed_loop_non_reactive_metrics = {
@@ -80,6 +70,7 @@ fig.update_layout(
     showlegend=False,
     # template="presentation",
 )
+fig.update_yaxes(range=[85, 100], row=1, col=1)
 
 # fig.show()
 
