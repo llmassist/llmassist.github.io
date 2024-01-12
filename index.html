@@ -38,6 +38,40 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('#tabsWithContent .tabs ul li');
+            const tabContentBoxes = document.querySelectorAll('#tabsWithContent .tab-content div');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(item => item.classList.remove('is-active'));
+                    tab.classList.add('is-active');
+
+                    const target = tab.dataset.target;
+                    tabContentBoxes.forEach(box => {
+                        if (box.getAttribute('id') === target) {
+                            box.classList.add('is-active');
+                        } else {
+                            box.classList.remove('is-active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <style>
+        /* Hide all content divs */
+        .tab-content .content {
+            display: none;
+        }
+
+        /* Show the active content div */
+        .tab-content .content.is-active {
+            display: block;
+            /* or 'display: flex;' depending on your layout */
+        }
+    </style>
 </head>
 
 <body>
@@ -291,7 +325,58 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column is-full-width">
-                    <h2 class="title is-3">Metrics</h2>
+                    <h2 class="title is-3">Qualitative Results</h2>
+                    <div id="tabsWithContent">
+                        <div class="tabs is-boxed">
+                            <ul>
+                                <li class="is-active" data-target="video1"><a>Video 1</a></li>
+                                <li data-target="video2"><a>Video 2</a></li>
+                                <li data-target="video3"><a>Video 3</a></li>
+                                <li data-target="video4"><a>Video 4</a></li>
+                                <li data-target="video5"><a>Video 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="video1" class="content is-active">
+                                <div class="columns is-centered">
+                                    <div class="column is-half">
+                                        <video controls loop autoplay muted>
+                                            <source src="./static/qualitative/scenario_4_pdm_closed.mp4"
+                                                type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <div class="column is-half">
+                                        <video controls loop autoplay muted>
+                                            <source src="./static/qualitative/scenario_4_llm_assist.mp4"
+                                                type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="video2" class="content">
+                                <div class="columns is-centered">
+                                    <div class="column is-half">
+                                        <video controls loop autoplay muted>
+                                            <source src="./static/qualitative/scenario_5_pdm_closed.mp4"
+                                                type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <div class="column is-half">
+                                        <video controls loop autoplay muted>
+                                            <source src="./static/qualitative/scenario_5_llm_assist.mp4"
+                                                type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="title is-3">Quantitative Results</h2>
                     <h3 class="title is-4">nuPlan Val-14 Split</h3>
                     <div class="content has-text-justified">
                         <p>
